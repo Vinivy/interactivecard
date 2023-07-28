@@ -28,9 +28,13 @@ body {
   width: 100vw;
   height: 100vh;
 
+  margin: 0;
+  padding: 0;
+
   font-family: 'Space Grotesk';
   color: #ffff;
-  position: relative;
+  position: absolute;
+  bottom: 0;
   z-index: 1;
 }
 
@@ -46,6 +50,7 @@ body {
   background: hsl(270, 3%, 87%);
 }
 
+/*Principal*/
 main {
   display: flex;
 
@@ -56,29 +61,52 @@ main {
   background: #000000;
 
   position: absolute;
+  bottom: 3rem;
   z-index: 2;
 }
 
 /*Cartão Front */
 .Card {
-  display: flex;
+  display: grid;
+
+  height: 85vh;
+  width: 43vw;
+  gap: 1rem;
+  background: transparent;
+  border-radius: 20px;
+}
+
+.Front {
+  justify-self: start;
+  background: url(./Assets/images/bg-card-front.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 32.7vw;
+  height: 36.7vh;
+  border-radius: 17px;
+}
+
+.Back {
+  justify-self: right;
+  background: url(./Assets/images/bg-card-back.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 32.7vw;
+  height: 36.7vh;
+  border-radius: 17px;
+}
+
+/*Form*/
+form {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
   width: 43vw;
   background: #ff0000;
-
-  position: relative;
 }
 
-.cardFront {
-  background: #9b4b4b;
-  width: 50vw;
-}
-
-.cardBack {
-  background-color: aqua;
-  width: 50vw;
-}
-
-form {
-  width: 43vw;
-  background: #ffffff;
+.Date {
+  display: flex;
+  gap: 10px;
 }
