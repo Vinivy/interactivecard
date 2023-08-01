@@ -146,11 +146,10 @@ input::placeholder{
   gap: 10px;
 }
 
-.labes {
+.labels {
   display: flex;
   justify-content: space-between;
-
-  width: 18vw;
+  width: 70%;
 }
 
 .Info {
@@ -205,6 +204,12 @@ input::placeholder{
 
 .Front img {
   padding: 20px 0 0 30px;
+}
+
+.ForntCardInfo {
+  display: flex;
+  gap: 5rem ;
+  width: 90%;
 }
 
 .TimeReal {
