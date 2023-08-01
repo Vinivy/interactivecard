@@ -1,5 +1,7 @@
 import './App.css'
 
+import { ReactPropTypes } from 'react'
+
 import { useState } from 'react'
 
 import icon from './Assets/Svgs/card-logo.svg'
@@ -8,31 +10,19 @@ function App() {
   const [ Name , setName] = useState('')
   const [ Number, setNumber] = useState()
 
-
+ 
   function CardFrontName(NameCard) {
-    NameCard.preventDefault()
-
-    let NameCardFrontExib = document.querySelector('.TranspName') 
-    NameCardFrontExib.textContent = Name
-
-    if()
+    NameCard.preventDefault()    
   }
-
-  
 
   function CardFrontNumber(NumeroCard) {
     NumeroCard.prenventDefault()
   }
   
-
   function Concluido() {
-    
-
-    let NumberFrontExib = document.querySelector('.TranspNumber')
-    NumberFrontExib.textContent = Number
-
-    alert(Name + " " + Number)
+   
   }
+
  
   return (
     <div className="App" >
