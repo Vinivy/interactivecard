@@ -31,6 +31,7 @@ function App() {
 
   function Concluido() {
     //fazer a segunda parte do projeto e arrumar states
+    alert(`Bem vindo ${Name}, Obrigado por Visitar meu projeto!. 😎`)
   }
 
   return (
