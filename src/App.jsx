@@ -3,7 +3,7 @@ import { useState } from 'react';
 import icon from './Assets/Svgs/card-logo.svg';
 
 function App() {
-  const [Name, setName] = useState('e.g. Jane Aplleseed');
+  const [NomeCard, setNomeCard] = useState('');
   const [Number, setNumber] = useState('0000 0000 0000 0000');
   const [Dateone, setDateone] = useState('00');
   const [DateTwo, setDatetwo] = useState('00');
@@ -29,19 +29,19 @@ function App() {
     event.preventDefault();
   }
 
+  
+
   function Concluido() {
     //fazer a segunda parte do projeto e arrumar states
-    alert(`Bem vindo ${Name}, Obrigado por Visitar meu projeto!. 😎`)
+    alert(`Obrigado por visitar meu Projeto ${NomeCard} 🤞😃`)
   }
 
   return (
     <div className="App">
       <section className="bg">
         <div className="onebox">
-          <div></div>
         </div>
         <div className="twobox">
-          <div></div>
         </div>
       </section>
       <main>
@@ -51,7 +51,7 @@ function App() {
             <section className="TimeReal">
               <span className="TranspNumber">{Number}</span>
               <div className="FrontCardInfo">
-                <span className="TranspName">{Name}</span>
+                <span className="TranspName">{NomeCard}</span>
                 <span className="TranspDate">{Dateone + "/" + DateTwo}</span>
               </div>
             </section>
@@ -70,10 +70,22 @@ function App() {
               type="text"
               className="Name"
               placeholder="e.g. Jane Aplleseed"
-              value={Name}
-              onChange={(event) => setName(event.target.value)}
+              value={NomeCard}
+              onChange={(event) => setNomeCard(event.target.value)}
+
+              style=
+              {{
+                //Se o Valor posto no input não for "Vinivy", ou se não for Letras,o outline será vermelho, eu Adicionei a Barra de espaço para n ficar dando erro, veja que tem um espaço no z a direita.
+                border: /^[A-Za-z ]*$/.test(NomeCard) ? '2px solid purple' : '2px solid red',
+                
+                outline: 
+                NomeCard === 'Vinivy' ? '2x solid hsl(278, 94%, 30%)' 
+              : 'none'}}
             />
-            <span className="DefaultName"></span>
+            {/^[A-Za-z ]*$/.test(NomeCard) ?
+             (<span className="DefaultName" style={{color: 'hsl(249, 80%, 36%)'}}>Tudo Ok</span> ) : 
+             (<span className="DefaultName" style={{color: 'hsl(0, 100%, 66%)'}}>Apenas letras por favor</span>)
+            }
           </div>
 
           <div className="columnOne">
@@ -85,6 +97,7 @@ function App() {
               value={Number}
               onChange={(event) => setNumber(event.target.value)}
             />
+            
             <span className="DefaultNumber"></span>
           </div>
 
@@ -133,4 +146,4 @@ function App() {
   );
 }
 
-export default App;
+export default App

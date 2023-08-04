@@ -137,7 +137,7 @@ input::placeholder{
 .DefaultName, .DefaultNumber, .DefaultDate {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 13px;
-  color:  hsl(249, 80%, 36%);
+  
 }
 
 .Date {
@@ -271,4 +271,130 @@ input::placeholder{
   font-size: 20px;
   font-weight: inherit;
   color: #ffff;
+}
+
+@media (max-width: 1106px ){
+  .TranspNumber {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 375px) {
+  .bg {
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .onebox {
+    width: 100vw;
+    height: 49vh;
+  }
+
+  .twobox {
+    width: 100Vw;
+    height: 90vh;
+  }
+
+  main {
+    display: grid;
+    align-items: start;
+
+    gap: 0;
+    width: 95vw;
+    height: 100vh;
+
+    position: absolute;
+    bottom: -1rem;
+    z-index: 2;
+  }
+
+  .Card {
+    display: grid;
+
+    height: 38vh;
+    width: 94vw;
+ 
+    border-radius: 20px;
+  }
+
+  .Front {
+    width: 85%;
+    height: 24%;
+    border-radius: 5px;
+    position: absolute;
+    top: 13.2%;
+  }
+
+  .Front img {
+    height: 8vh;
+    width: 20vw;
+    padding: 20px 0 0 14px;
+  }
+
+  .TimeReal {
+    display: grid;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+
+    width: 90%;
+    height: 96%;
+
+    color: #ffff;
+  }
+
+  .TranspNumber, .Binfo {
+    font-size: 21px;
+  }
+
+  .TranspName, .TranspDate {
+    font-size: 14px;
+  }
+  /*BAck*/
+  .Back {
+    justify-self: right;
+    width: 85%;
+    height: 61%;
+    border-radius: 5px;
+  }
+
+  /*Form*/
+  form {
+    display: grid;
+    justify-self: center;
+    justify-content: center;
+
+    width: 100%;
+    height: fit-content;
+  }
+
+  .columnOne, .columnTwo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: fit-content;
+  }
+
+  .Name, .Number {
+    width: 82vw;
+    height: 5vh;
+    border-radius: 5px;
+  }
+
+  .Day {
+    height: 4vh;
+    width: 22vw;
+    border-radius: 5px;
+  }
+
+  .Cvc {
+    height: 4vh;
+    width: 12vw;
+    border-radius: 5px;
+  }
+
+  .Confirm {
+    margin: 40px 0 0 0;
+  }
 }
