@@ -97,8 +97,13 @@ function App() {
               value={Number}
               onChange={(event) => setNumber(event.target.value)}
             />
+            { /^[0-9 ]*$/.test(Number) && Number.value === 16? 
+            (<span className="DefaultNumber" style={{color: 'hsl(249, 80%, 36%)'}}>Tudo Certo</span>) 
+            : 
+            (<span className="DefaultNumber" style={{color: 'hsl(0, 100%, 66%)'}}>Algo esta errado</span>)
+
+            }
             
-            <span className="DefaultNumber"></span>
           </div>
 
           <section className="Date">
