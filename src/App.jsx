@@ -29,7 +29,6 @@ function App() {
     event.preventDefault();
   }
 
-  
 
   function Concluido() {
     //fazer a segunda parte do projeto e arrumar states
@@ -72,20 +71,32 @@ function App() {
               placeholder="e.g. Jane Aplleseed"
               value={NomeCard}
               onChange={(event) => setNomeCard(event.target.value)}
+              maxLength={8}
 
               style=
               {{
                 //Se o Valor posto no input não for "Vinivy", ou se não for Letras,o outline será vermelho, eu Adicionei a Barra de espaço para n ficar dando erro, veja que tem um espaço no z a direita.
-                border: /^[A-Za-z ]*$/.test(NomeCard) ? '2px solid purple' : '2px solid red',
+                border: /^[A-Za-z ]*$/.test(NomeCard) ? '1px solid hsla(0, 0%, 67%, 0.887)' : '2px solid red',
                 
                 outline: 
-                NomeCard === 'Vinivy' ? '2x solid hsl(278, 94%, 30%)' 
+                NomeCard === 'Vinivy' ? '1x solid hsl(278, 94%, 30%)' 
               : 'none'}}
             />
-            {/^[A-Za-z ]*$/.test(NomeCard) ?
-             (<span className="DefaultName" style={{color: 'hsl(249, 80%, 36%)'}}>Tudo Ok</span> ) : 
-             (<span className="DefaultName" style={{color: 'hsl(0, 100%, 66%)'}}>Apenas letras por favor</span>)
+            {/*Acima temos uma condicional em que se o minput name n tiver Letras, irá aparecer uma borda vermelha. e aqui abaixo é se o input n for com letras irá aparecer um span de aviso*/}
+
+            {/^[A-Za-z ]*$/.test(NomeCard) && NomeCard.length >= 5 ?
+             (<span className="DefaultName" style={{color: 'hsl(249, 80%, 36%)'}}>Tudo Ok</span> )
+              : 
+             (<span className="DefaultName" style={{color: 'hsl(0, 100%, 66%)'}}>Algo errado</span>)
             }
+
+            {/*E aqui abaixo tera uma condição em que se o input name chegar no maximo de caracteres permitido, ele irá avisar pelo um span */}
+
+            { NomeCard.length === 8 ?
+               (<span className="DefaultName" style={{color: 'hsl(249, 80%, 36%)'}}>Maximo de caracteres</span> ) 
+               :
+              (<span className="DefaultName" style={{color: 'hsl(0, 100%, 66%)'}}></span>)
+             }
           </div>
 
           <div className="columnOne">
@@ -97,7 +108,7 @@ function App() {
               value={Number}
               onChange={(event) => setNumber(event.target.value)}
             />
-            { /^[0-9 ]*$/.test(Number) && Number.value === 16? 
+            { /^[0-9 ]*$/.test(Number) && Number.value === 16 ? 
             (<span className="DefaultNumber" style={{color: 'hsl(249, 80%, 36%)'}}>Tudo Certo</span>) 
             : 
             (<span className="DefaultNumber" style={{color: 'hsl(0, 100%, 66%)'}}>Algo esta errado</span>)

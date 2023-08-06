@@ -48,7 +48,7 @@ body {
 .twobox {
   width: 70Vw;
   height: 100vh;
-  background: hsl(270, 3%, 87%);
+  background: hsl(0, 0%, 100%);
 }
 
 /*Principal*/
@@ -95,10 +95,12 @@ form {
 .columnOne, .columnTwo{
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 10px;
 }
 /*input Cardholdername, input Number*/
 .Name, .Number {
+  border: 1px solid hsla(0, 0%, 67%, 0.887);
+  background-color: transparent;
   width: 25.5vw;
   height: 5vh;
   border-radius: 5px;
@@ -130,7 +132,7 @@ input:focus {
 input::placeholder{
   font-family: 'Space Grotesk';
   padding: 0 0 0 10px ;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   font-weight: 500;
 }
 
@@ -288,12 +290,12 @@ input::placeholder{
 
   .onebox {
     width: 100vw;
-    height: 49vh;
+    height: 34vh;
   }
 
   .twobox {
     width: 100Vw;
-    height: 90vh;
+    height: 66vh;
   }
 
   main {
@@ -302,10 +304,10 @@ input::placeholder{
 
     gap: 0;
     width: 95vw;
-    height: 100vh;
+    height: 98vh;
 
     position: absolute;
-    bottom: -1rem;
+    bottom: 0;
     z-index: 2;
   }
 
@@ -323,12 +325,12 @@ input::placeholder{
     height: 24%;
     border-radius: 5px;
     position: absolute;
-    top: 13.2%;
+    top: 14%;
   }
 
   .Front img {
     height: 8vh;
-    width: 20vw;
+    width: 18vw;
     padding: 20px 0 0 14px;
   }
 
@@ -374,6 +376,7 @@ input::placeholder{
     flex-direction: column;
     gap: 10px;
     width: fit-content;
+    margin: 10px 0 0 0;
   }
 
   .Name, .Number {
