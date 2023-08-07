@@ -303,7 +303,7 @@ input::placeholder{
     align-items: start;
 
     gap: 0;
-    width: 95vw;
+    width: 98vw;
     height: 98vh;
 
     position: absolute;
@@ -314,7 +314,7 @@ input::placeholder{
   .Card {
     display: grid;
 
-    height: 38vh;
+    height: 39vh;
     width: 94vw;
  
     border-radius: 20px;
