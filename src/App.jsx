@@ -7,7 +7,7 @@ function App() {
   const [Number, setNumber] = useState('0000 0000 0000 0000');
   const [Dateone, setDateone] = useState('00');
   const [DateTwo, setDatetwo] = useState('00');
-  const [Cvc, setCvc] = useState('000');
+  const [Cvc, setCvc] = useState('');
 
   function CardFrontName(event) {
     event.preventDefault();
@@ -76,18 +76,16 @@ function App() {
               style=
               {{
                 //Se o Valor posto no input não for "Vinivy", ou se não for Letras,o outline será vermelho, eu Adicionei a Barra de espaço para n ficar dando erro, veja que tem um espaço no z a direita.
-                border: /^[A-Za-z ]*$/.test(NomeCard) ? '1px solid hsla(0, 0%, 67%, 0.887)' : '2px solid red',
+                outline: /^[A-Za-z ]*$/.test(NomeCard) ? '' : '2px solid red'
                 
-                outline: 
-                NomeCard === 'Vinivy' ? '1x solid hsl(278, 94%, 30%)' 
-              : 'none'}}
-            />
+                
+               }} />
             {/*Acima temos uma condicional em que se o minput name n tiver Letras, irá aparecer uma borda vermelha. e aqui abaixo é se o input n for com letras irá aparecer um span de aviso*/}
 
-            {/^[A-Za-z ]*$/.test(NomeCard) && NomeCard.length >= 5 ?
+            {/^[A-Za-z ]*$/.test(NomeCard) && NomeCard.length > 3 ?
              (<span className="DefaultName" style={{color: 'hsl(249, 80%, 36%)'}}>Tudo Ok</span> )
               : 
-             (<span className="DefaultName" style={{color: 'hsl(0, 100%, 66%)'}}>Algo errado</span>)
+             (<span className="DefaultName" style={{color: 'hsl(0, 100%, 66%)'}}>Preencha o Box</span>)
             }
 
             {/*E aqui abaixo tera uma condição em que se o input name chegar no maximo de caracteres permitido, ele irá avisar pelo um span */}
@@ -107,14 +105,18 @@ function App() {
               placeholder="e.g 1234 5678 9123 0000"
               value={Number}
               onChange={(event) => setNumber(event.target.value)}
+              maxLength={19}
+              style={{
+                outline : /^[0-9 ]*$/.test(Number) ? 
+                '' : '2px solid red'
+              }}
             />
-            { /^[0-9 ]*$/.test(Number) && Number.value === 16 ? 
+          
+            { /^[0-9 ]*$/.test(Number) ? 
             (<span className="DefaultNumber" style={{color: 'hsl(249, 80%, 36%)'}}>Tudo Certo</span>) 
             : 
             (<span className="DefaultNumber" style={{color: 'hsl(0, 100%, 66%)'}}>Algo esta errado</span>)
-
             }
-            
           </div>
 
           <section className="Date">
@@ -131,6 +133,7 @@ function App() {
                   placeholder="DAY"
                   value={Dateone}
                   onChange={(event) => setDateone(event.target.value)}
+                  maxLength={2}
                 />
 
                 <input
@@ -139,6 +142,7 @@ function App() {
                   placeholder="MM"
                   value={DateTwo}
                   onChange={(event) => setDatetwo(event.target.value)}
+                  maxLength={2}
                 />
                 <input
                   type="text"
@@ -147,9 +151,16 @@ function App() {
                   placeholder="CVC"
                   value={Cvc}
                   onChange={(event) => setCvc(event.target.value)}
+                  maxLength={3}
                 />
               </div>
-              <span className="DefaultDate"></span>
+              { Cvc.length === 3 && Dateone.length === 2 && DateTwo.length === 2 ? 
+              (<span className="DefaultDate" style={{color: 'hsl(249, 80%, 36%)'}}>Tudo Ok</span>)
+              :
+              (<span className='DefaultDate' style={{color: 'hsl(0, 100%, 66%)'}}>Preencha o Box</span>)
+
+              }
+              
             </div>
 
             <button type="submit" className="Confirm">

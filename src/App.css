@@ -99,7 +99,6 @@ form {
 }
 /*input Cardholdername, input Number*/
 .Name, .Number {
-  border: 1px solid hsla(0, 0%, 67%, 0.887);
   background-color: transparent;
   width: 25.5vw;
   height: 5vh;
@@ -116,7 +115,7 @@ label {
 
 input {
   outline: none;
-  border: 1px solid hsl(249, 99%, 64%);
+  border: 1px solid hsla(0, 0%, 67%, 0.887);
   padding: 0 0 0 10px ;
   letter-spacing: 2px;
 }
@@ -126,7 +125,7 @@ input:focus {
   padding: 0 0 0 10px ;
   letter-spacing: 2px;
   font-weight: 500;
-  border: 2px solid hsl(278, 94%, 30%);
+  outline: 2px solid hsl(278, 94%, 30%);
 } 
 
 input::placeholder{
@@ -393,7 +392,7 @@ input::placeholder{
 
   .Cvc {
     height: 4vh;
-    width: 12vw;
+    width: 18vw;
     border-radius: 5px;
   }
 
