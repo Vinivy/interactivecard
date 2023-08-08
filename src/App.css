@@ -289,12 +289,12 @@ input::placeholder{
 
   .onebox {
     width: 100vw;
-    height: 34vh;
+    height: 35vh;
   }
 
   .twobox {
     width: 100Vw;
-    height: 66vh;
+    height: 65vh;
   }
 
   main {
@@ -303,7 +303,7 @@ input::placeholder{
 
     gap: 0;
     width: 98vw;
-    height: 88vh;
+    height: 86vh;
   }
 
   .Card {
