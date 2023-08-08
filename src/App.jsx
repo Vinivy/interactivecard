@@ -2,6 +2,9 @@ import './App.css';
 import { useState } from 'react';
 import icon from './Assets/Svgs/card-logo.svg';
 
+//Conponente quando for checado
+import Completo from "./Components/Completo";
+
 function App() {
   const [NomeCard, setNomeCard] = useState('');
   const [Number, setNumber] = useState('0000 0000 0000 0000');
@@ -160,7 +163,6 @@ function App() {
               (<span className='DefaultDate' style={{color: 'hsl(0, 100%, 66%)'}}>Preencha o Box</span>)
 
               }
-              
             </div>
 
             <button type="submit" className="Confirm">
@@ -168,6 +170,7 @@ function App() {
             </button>
           </section>
         </form>
+        <Completo/>
       </main>
     </div>
   );

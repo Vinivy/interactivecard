@@ -1,0 +1,16 @@
+.Check {
+  display: grid;
+  justify-items: center;
+  height: 29vh;
+  width: fit-content;
+}
+
+h1 {
+  letter-spacing: 5px;
+  font-weight: inherit;
+  font-size: 29px;
+}
+
+p {
+  font-size: 20px;
+}

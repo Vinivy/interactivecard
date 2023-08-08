@@ -73,7 +73,7 @@ main {
 .Card {
   display: grid;
 
-  height: 85vh;
+  height: 77vh;
   width: 43vw;
 
   gap: 1rem;
@@ -83,7 +83,7 @@ main {
 
 /*Form*/
 form {
- display: grid;
+ display: none;
  justify-content: center;
  align-items: center;
 
@@ -198,8 +198,8 @@ input::placeholder{
   background: url(./Assets/images/bg-card-front.png) no-repeat;
   background-size: cover;
   background-position: center;
-  width: 32.7vw;
-  height: 36.7vh;
+  width: 32vw;
+  height: 32vh;
   border-radius: 10px;
 }
 
@@ -253,8 +253,8 @@ input::placeholder{
   background: url(./Assets/images/bg-card-back.png) no-repeat;
   background-size: cover;
   background-position: center;
-  width: 32.7vw;
-  height: 36.7vh;
+  width: 32vw;
+  height: 32vh;
   border-radius: 10px;
 }
 
