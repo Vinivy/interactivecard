@@ -16,6 +16,7 @@ A aplicação "Cartão de Crédito Interativo" desenvolvida em React possui as s
 - HTML5: Linguagem de marcação para estruturar o conteúdo da aplicação.
 - CSS3: Linguagem de estilo para definir a apresentação visual da aplicação.
 
-![Cartão de Crédito Interativo](desktop-design.jpg)
+![Cartão de Crédito Interativo]
+<img src="./Github/desktop-design.jpg">
 
 [Link para a aplicação](https://cardcredit-p0efe3v77-vinivy.vercel.app/)
