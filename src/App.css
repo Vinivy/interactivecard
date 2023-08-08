@@ -303,7 +303,8 @@ input::placeholder{
 
     gap: 0;
     width: 98vw;
-    height: 86vh;
+    height: fit-content;
+    bottom: 10px;
   }
 
   .Card {
