@@ -83,7 +83,7 @@ main {
 
 /*Form*/
 form {
- display: none;
+ display: grid;
  justify-content: center;
  align-items: center;
 

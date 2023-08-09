@@ -11,6 +11,7 @@ function App() {
   const [Dateone, setDateone] = useState('00');
   const [DateTwo, setDatetwo] = useState('00');
   const [Cvc, setCvc] = useState('');
+  const [FormVisible, setFormVisible] = useState(true)
 
   function CardFrontName(event) {
     event.preventDefault();
@@ -31,11 +32,15 @@ function App() {
   function Convict(event) {
     event.preventDefault();
   }
+ 
+  function Concluido(event) {
+    event.preventDefault()
+   if (NomeCard && Number && Dateone && DateTwo && Cvc) {
+    setFormVisible(false)
+   }else {
+    alert('Prencha todos as boxes')
+   }
 
-
-  function Concluido() {
-    //fazer a segunda parte do projeto e arrumar states
-    alert(`Obrigado por visitar meu Projeto ${NomeCard} 🤞😃`)
   }
 
   return (
@@ -64,8 +69,10 @@ function App() {
             </div>
           </div>
         </section>
-
-        <form onSubmit={Concluido}>
+        {/*Area de verificação para retornar a um componente , então se todos os inputs tiver preenchidas, ira trocar para um componente. e se n tiver preenchidos ira aparecer um alert*/}
+       {
+        FormVisible ? (
+          <form onSubmit={Concluido}>
           <div className="columnOne">
             <label htmlFor="holderName">CARDHOLDER NAME</label>
             <input
@@ -102,8 +109,7 @@ function App() {
 
           <div className="columnOne">
             <label htmlFor="CardNumber">CARD NUMBER</label>
-            <input
-              type="text"
+            <input type="text"
               className="Number"
               placeholder="e.g 1234 5678 9123 0000"
               value={Number}
@@ -165,12 +171,13 @@ function App() {
               }
             </div>
 
+          </section>
             <button type="submit" className="Confirm">
               Confirm
             </button>
-          </section>
         </form>
-        <Completo/>
+        ) : (<Completo/>)
+       }
       </main>
     </div>
   );
