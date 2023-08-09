@@ -298,6 +298,7 @@ input::placeholder{
   main {
     display: grid;
     align-items: start;
+    justify-items: center;
 
     gap: 1rem;
     width: 98vw;
@@ -341,7 +342,7 @@ input::placeholder{
   }
 
   .TranspNumber, .Binfo {
-    font-size: 21px;
+    font-size: 20px;
   }
 
   .TranspName, .TranspDate {
@@ -393,5 +394,10 @@ input::placeholder{
 
   .Confirm {
     margin: 10px 0 0 0;
+  }
+
+  /*reajuste da aba de completo*/
+  .completo_Check__XMnvD {
+    margin: 4rem 0 5rem 0;
   }
 }
