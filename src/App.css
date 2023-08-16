@@ -196,8 +196,9 @@ input::placeholder{
   background: url(./Assets/images/bg-card-front.png) no-repeat;
   background-size: cover;
   background-position: center;
+  overflow: hidden;
   width: 32vw;
-  height: 32vh;
+  height: 35vh;
   border-radius: 10px;
 }
 
@@ -252,7 +253,7 @@ input::placeholder{
   background-size: cover;
   background-position: center;
   width: 32vw;
-  height: 32vh;
+  height: 35vh;
   border-radius: 10px;
 }
 
@@ -317,7 +318,7 @@ input::placeholder{
 
   .Front {
     width: 79%;
-    height: 28%;
+    height: 25%;
     border-radius: 5px;
     position: absolute;
     top: 14.5%;
