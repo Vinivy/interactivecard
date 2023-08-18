@@ -259,7 +259,7 @@ input::placeholder{
 .Back div {
   height: 100%;
   width: 85%;
-
+  
   display: grid;
   justify-content: right;
   align-items: center;
