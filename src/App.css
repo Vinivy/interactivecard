@@ -287,12 +287,12 @@ input::placeholder{
 
   .onebox {
     width: 100vw;
-    height: 35vh;
+    height: 30vh;
   }
 
   .twobox {
     width: 100Vw;
-    height: 65vh;
+    height: 70vh;
   }
 
   main {
@@ -300,32 +300,32 @@ input::placeholder{
     align-items: start;
     justify-items: center;
 
-    gap: 1rem;
+    gap: 0rem;
     width: 98vw;
-    height: fit-content;
+    height: 92%;
     bottom: 10px;
   }
 
   .Card {
     display: grid;
 
-    height: 39vh;
+    height: 33vh;
     width: 94vw;
  
     border-radius: 20px;
   }
 
   .Front {
-    width: 79%;
-    height: 25%;
+    width: 83%;
+    height: 22%;
     border-radius: 5px;
     position: absolute;
-    top: 14.5%;
+    top: 13.5%;
   }
 
   .Front img {
     height: 8vh;
-    width: 18vw;
+    width: 21vw;
     padding: 20px 0 0 14px;
   }
 
@@ -342,7 +342,7 @@ input::placeholder{
   }
 
   .TranspNumber, .Binfo {
-    font-size: 20px;
+    font-size: 19px;
   }
 
   .TranspName, .TranspDate {
@@ -351,8 +351,8 @@ input::placeholder{
   /*BAck*/
   .Back {
     justify-self: right;
-    width: 85%;
-    height: 61%;
+    width: 88%;
+    height: 65%;
     border-radius: 5px;
   }
 
@@ -362,6 +362,7 @@ input::placeholder{
     justify-self: center;
     justify-content: center;
 
+    gap: 5px;
     width: 100%;
     height: fit-content;
   }
@@ -371,7 +372,6 @@ input::placeholder{
     flex-direction: column;
     gap: 10px;
     width: fit-content;
-    margin: 10px 0 0 0;
   }
 
   .Name, .Number {
