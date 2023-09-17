@@ -1,23 +1,53 @@
-# Cartão de Crédito Interativo
+<h1 align="center"> Card Credit </h1>
 
-O projeto "Cartão de Crédito Interativo" é uma aplicação web feita com React que simula a interatividade do preenchimento de informações em um cartão de crédito. A aplicação permite ao usuário inserir informações básicas de um cartão de crédito, como número do cartão, nome do titular, data de validade e código de segurança (CVV), e visualizar a atualização em tempo real do cartão de crédito conforme os campos são preenchidos.
+<p align="center">
+Este é um projeto exclusivo e gratuito desenvolvido pela Front-endMentor para demonstrar informações de cartão de crédito em tempo real.
+</p>
 
-## Funcionalidades
+<p align="center">
+ <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;
+ <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;
+ <a href="#-visualização">Visualização</a>&nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;
+  <a href="#memo-licença">Licença</a>
+</p>
 
-A aplicação "Cartão de Crédito Interativo" desenvolvida em React possui as seguintes funcionalidades:
+<p align="center">
+ <img alt="Licença" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000">
+</p>
 
-- **Preenchimento de informações:** O usuário pode digitar as informações do cartão de crédito em campos específicos.
-- **Atualização em tempo real:** Conforme o usuário preenche os campos, a visualização do cartão de crédito é atualizada em tempo real, mostrando os detalhes inseridos.
-- **Validação de campos:** A aplicação realiza validação dos campos para garantir que informações inválidas não sejam aceitas.
+<br>
 
-## Tecnologias Utilizadas
+<p align="center">
+  <img alt="Card Credit" src="./Github/desktop-design.jpg" width="100%">
+</p>
 
-- React: Biblioteca JavaScript para construção de interfaces de usuário interativas.
-- HTML5: Linguagem de marcação para estruturar o conteúdo da aplicação.
-- CSS3: Linguagem de estilo para definir a apresentação visual da aplicação.
+<br>
 
-![Cartão de Crédito Interativo Desktop]
-<img src="./Github/desktop-design.jpg">
-![Cartão de Crédito Interativo Mobille]
-<img src="./Github/mobile-design.jpg">
-[Link para a aplicação](https://cardcredit-p0efe3v77-vinivy.vercel.app/)
+<p align="center">
+  <img alt="Card Credit" src="./Github/mobile-design.jpg" width="100%">
+</p>
+
+## 🚀 Tecnologias
+
+Esse projeto foi desenvolvido com as seguintes tecnologias:
+
+- HTML
+- CSS
+- JavaScript
+- React
+- Git e Github
+- Figma
+
+## 💻 Projeto
+
+O "Card Credit" é um projeto que demonstra informações de cartão de crédito em tempo real. O layout foi criado pela Front-endMentor, e a funcionalidade foi implementada utilizando HTML, CSS, JavaScript e React.
+
+## 🔖 Visualização
+
+Você pode visualizar o projeto através [DESTA LINK](https://vinivy.github.io/Card-Credit/).
+
+## :memo: Licença
+
+Este projeto está sob a licença MIT.
+
+<p align="center">🚀</p>
