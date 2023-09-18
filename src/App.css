@@ -276,6 +276,10 @@ input::placeholder{
   .TranspNumber {
     font-size: 25px;
   }
+
+  .Front , .Back {
+    height: 17vw;
+  }
 }
 
 @media (max-width: 375px) {
