@@ -104,7 +104,7 @@ function App() {
                (<span className="DefaultName" style={{color: 'hsl(249, 80%, 36%)'}}>Maximo de caracteres</span> ) 
                :
               (<span className="DefaultName" style={{color: 'hsl(0, 100%, 66%)'}}></span>)
-             }
+            }
           </div>
 
           <div className="columnOne">
